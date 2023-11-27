@@ -1,0 +1,68 @@
+<!-- <div class="calculate">
+  <h2>Calculate your currency</h2>
+  <div class="calculateCurrency">
+    <div class="firstCurrency">
+      <input type="number" id="currencyNumber1" (input)="onInputChange($event)">
+      <select #currency1 name="" id="currency1" (change)="onSelected1(currency1.value)">
+        <option value="UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+    <div class="secondCurrency">
+      <input type="number" id="currencyNumber2" [ngModel]="convertedValue" >
+      <select #currency2 name="" id="currency2" (change)="onSelected2(currency2.value)">
+        <option value="UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+  </div>
+</div> -->
+
+<div class="calculate">
+  <h2>Calculate your currency</h2>
+  <div class="calculateCurrency">
+    <div class="firstCurrency">
+      <input type="number" id="currencyNumber1" [(ngModel)]="convertedValue" (input)="onInputChange()">
+      <select #currency1 name="" id="currency1" (change)="onSelected1(currency1.value)">
+        <option value="UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+    <div class="secondCurrency">
+      <input type="number" id="currencyNumber2" [(ngModel)]="convertedValue2" (input)="onInputChange2()">
+      <select #currency2 name="" id="currency2" (change)="onSelected2(currency2.value)">
+        <option value="UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="calculate">
+  <h2>Calculate your currency</h2>
+  <div class="calculateCurrency">
+    <form action="" (input)="onInputChange($event)">
+      <div class="firstCurrency">
+        <input type="number" id="currencyNumber1" value="convertedValue" >
+        <select #currency1 name="" id="currency1" (change)="onSelected1(currency1.value)">
+          <option value="UAH">UAH</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </div>
+      <div class="secondCurrency">
+        <input type="number" id="currencyNumber2" value="convertedValue" >
+        <select #currency2 name="" id="currency2" (change)="onSelected2(currency2.value)">
+          <option value="UAH">UAH</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </div>
+
+    </form>
+  </div>
+</div> -->
